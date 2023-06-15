@@ -8,6 +8,7 @@ import { MaterialModule } from './material/material.module';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     InicioComponent,
     AcercadeComponent,
     SidenavComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
