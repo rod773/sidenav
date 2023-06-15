@@ -1,0 +1,38 @@
+<mat-drawer-container>
+    <mat-drawer #drawer class="mat-elevation-z8" openedChange="closeafter">
+        <button mat-icon-button class="menu-button" (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+            <span>Menu</span>
+        </button>
+        <mat-divider></mat-divider>
+
+        <button mat-icon-button class="menu-button" routerLink="">
+            <mat-icon>home</mat-icon>
+            <span>Inicio</span>
+        </button>
+        <button mat-icon-button class="menu-button" routerLink="/acercade">
+            <mat-icon>person</mat-icon>
+            <span>Acerca De</span>
+        </button>
+        <button mat-icon-button class="menu-button" routerLink="">
+            <mat-icon>info</mat-icon>
+            <span>Categorias</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-icon-button class="menu-button" routerLink="">
+            <mat-icon>help</mat-icon>
+            <span>Ayuda</span>
+        </button>
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <div class="content mat-elevation-z8">
+            <button mat-icon-raised-button class="toggle-btn" (click)="drawer.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>
