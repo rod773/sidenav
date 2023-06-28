@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { COLORS } from '../../globals/variables';
 
 @Component({
   selector: 'app-loading',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoadingComponent implements OnInit {
   loading = true;
+
+  mycolor = 'red';
+
+  spinnerStyle() {
+    color: COLORS.blue20;
+  }
 
   ngOnInit() {
     setTimeout(() => {
